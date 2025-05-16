@@ -1,9 +1,9 @@
-class Line{
+class Linea{
     float length;
     float angle;
     float angularSpeed;
     
-    Line(float length){
+    Linea(float length){
         this.length = length;
         this.angle = random(0, 360);
         this.angularSpeed = random(-0.5, 0.5);

@@ -1,7 +1,7 @@
  class Estrella{
    
     float x, y, size, count;
-    Line[] lines;
+    Linea[] lines;
     color colorin;
     color[] lineColors;
     
@@ -12,11 +12,11 @@
      this.count = count;
      this.colorin = colorin;
 
-     lines = new Line[count];
+     lines = new Linea[count];
      lineColors = new color[count];
      for (int i = 0; i < count; i++) {
        lineColors[i] = color(red(colorin ) + random(-20, 20), green(colorin) + random(-20, 20), blue(colorin) + random(-20, 20), 150);
-       lines[i] = new Line(random(1, map(count, countMin, countMax, 20, 200)));
+       lines[i] = new Linea(random(1, map(count, countMin, countMax, 20, 200)));
      }
    }
 
